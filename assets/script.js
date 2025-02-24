@@ -1,4 +1,4 @@
-const cardsEl = document.querySelector('.cards .row');
+const cardsEl = document.querySelector('#cards .row');
 
 const teamMembers = [
   {
@@ -61,4 +61,15 @@ function getMemberMarkup(memberObj) {
     </div>`
 
     return markup
+}
+
+
+// iteriamo l'array con il ciclo for e aggiungiamo gli elementi al contenitore
+for (let i = 0; i < teamMembers.length; i++) {
+  const thisMember = teamMembers[i];
+  
+
+  const markup = getMemberMarkup(thisMember)
+  console.log(markup);
+  
 }
