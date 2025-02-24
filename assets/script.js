@@ -48,7 +48,7 @@ function getMemberMarkup(memberObj) {
 
   const markup = `
     <div class="col p-0">
-      <div class="card d-flex bg-dark m-2 p-0 flex-row align-items-center">
+      <div class="card d-flex bg-dark m-2 flex-row align-items-center rounded-0">
         <div class="col-4">
           <img src="${img}" class="img-fluid" alt="${name}">
         </div>
