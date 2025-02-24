@@ -5,3 +5,22 @@
   font-family: "DynaPuff", serif;
 }
 
+img {
+  max-width: 100%;
+}
+
+.card {
+  height: 100px;
+
+}
+
+.role {
+  font-family: "Montserrat", serif;
+  font-weight: 600;
+}
+
+.email {
+  font-family: "Montserrat", serif;
+  font-weight: 300;
+  color: rgb(124, 174, 236);
+}
