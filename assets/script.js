@@ -1,3 +1,5 @@
+const cardsEl = document.querySelector('.cards .row');
+
 const teamMembers = [
   {
     name: "Marco Bianchi",
@@ -40,4 +42,23 @@ const teamMembers = [
 console.log(teamMembers);
 
 
+//inseriamo la funzione per aggiungere gli elementi in pagina 
+function getMemberMarkup(memberObj) {
+  const { name, role, email, img } = memberObj;
 
+  const markup = `
+    <div class="col">
+      <div class="card d-flex bg-dark m-2 flex-row align-items-center">
+        <div class="col-4">
+          <img src="${img}" class="img-fluid" alt="${name}">
+        </div>
+        <div class="text-light ms-3">
+          <h5 class="mt-2">${name}</h5>
+          <p class="mb-2">${role}</p>
+          <p class="mb-2">${email}</p>
+        </div>
+      </div>
+    </div>`
+
+    return markup
+}
