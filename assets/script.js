@@ -72,4 +72,6 @@ for (let i = 0; i < teamMembers.length; i++) {
   const markup = getMemberMarkup(thisMember)
   console.log(markup);
   
+  // inseriamo il markup generato
+  cardsEl.innerHTML += markup
 }
