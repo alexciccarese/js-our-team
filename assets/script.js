@@ -47,12 +47,12 @@ function getMemberMarkup(memberObj) {
   const { name, role, email, img } = memberObj;
 
   const markup = `
-    <div class="col p-0">
+    <div class="col-12  col-md-6 col-lg-4 p-0">
       <div class="d-flex bg-dark me-3 flex-row align-items-center rounded-0">
         <div class="col-4">
           <img src="${img}" class="img-fluid" alt="${name}">
         </div>
-        <div class="text-light ms-3">
+        <div class="text-light ms-3 p-2">
           <h5 class="name mt-1">${name}</h5>
           <p class="role mb-2">${role}</p>
           <p class="email mb-2">${email}</p>
